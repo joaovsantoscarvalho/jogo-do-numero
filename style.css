@@ -73,6 +73,6 @@ paragrafosResultado p {
     background-color: #dc3545;
 }
 
-ultimoResultado.correto {
+.ultimoResultado.correto {
     background-color: #28a745;
 }
