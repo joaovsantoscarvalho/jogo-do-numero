@@ -76,3 +76,16 @@ paragrafosResultado p {
 .ultimoResultado.correto {
     background-color: #28a745;
 }
+
+.botaoReniciar {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    boder: none;
+    boder-radius: 5px;
+    font-size:1.2em;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+}
