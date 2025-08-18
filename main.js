@@ -29,3 +29,28 @@ function verificarPalpite() {
         } else if (palpiteUsuario > "O último palpite foi muito alto";
     }
 }
+
+contagemPalpites++;
+campoPalpiite.valeu = "";
+campoPakpite.focus();
+}
+
+envioPalpite.addEventListener('clik',verificarPalpite);
+
+function finalizarJogo() {
+    campoPalpite.disabled = true;
+    envioPalpite.disabled = true;
+    botaoReniciar = document.createElement('button');
+    document.body.appendChild(botaoReniciar);
+    botaoReniciar.textContent = 'Reniciar Jogo';
+    botaoReniciar.ClassList.add('botaoReniciar');
+    botaoReniciar.addEventListener('clik', reniciarJogo);
+}
+
+function reniciarJogo() {
+    contagemPalpites = 1;
+    const paragrafosReniciar = document.querySelectorAll('.paragrafosResultado p');
+    for (const paragrafoReniciar of paragrafosReniciar) {
+        paragrafoReniciar.textcontent = "";
+    }
+}
