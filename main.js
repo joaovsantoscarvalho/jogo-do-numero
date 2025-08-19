@@ -53,4 +53,12 @@ function reniciarJogo() {
     for (const paragrafoReniciar of paragrafosReniciar) {
         paragrafoReniciar.textcontent = "";
     }
+
+    botaoReniciar.parentNode.renmoveChild(botraoReniciar);
+    campoPalpite.disabled = false;
+    envioPalpite.disabled = false;
+    campoPalpite.value = "";
+    campoPalpite.focus();
+    ultimoResultado.style.backgroundColor = 'white';
+    numeroAleatorio = Math.floor(Math.random() * 100) + 1;
 }
