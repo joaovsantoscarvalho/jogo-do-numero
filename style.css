@@ -89,3 +89,7 @@ paragrafosResultado p {
     cursor:pointer;
     transition: background-color 0.3s ease;
 }
+
+.botaoReniciar:hover {
+    background-color: #0056b3;
+}
