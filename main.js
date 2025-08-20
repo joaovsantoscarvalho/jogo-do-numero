@@ -41,6 +41,7 @@ function finalizarJogo() {
     campoPalpite.disabled = true;
     envioPalpite.disabled = true;
     botaoReniciar = document.createElement('button');
+
     document.body.appendChild(botaoReniciar);
     botaoReniciar.textContent = 'Reniciar Jogo';
     botaoReniciar.ClassList.add('botaoReniciar');
@@ -49,7 +50,7 @@ function finalizarJogo() {
 
 function reniciarJogo() {
     contagemPalpites = 1;
-    const paragrafosReniciar = document.querySelectorAll('.paragrafosResultado p');
+    const paragrafosReniciar = document.querySelectorAll('.paragrafosResultados p');
     for (const paragrafoReniciar of paragrafosReniciar) {
         paragrafoReniciar.textcontent = "";
     }
