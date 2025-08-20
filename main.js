@@ -16,20 +16,20 @@ function verificarPalpite() {
     palpites.textContent += palpiteUsuario + " ";
 
     if (palpiteUsuario === numeroAleatorio) {
-
         ultimoResultado.textContent = "Parabéns! você Acertou";
         UltimoResultado.style.backgroundColor = "green";
         baixoOuAlto.textContent = "";
         finalizarJogo();
+    } else if (contagemPalpites === 10) {
+        ultimoResultado.textContent = "FIM DE JOGO!!";
+        baixoOuAto.textContent = 10"";
+        finalizarJogo();
     } else {
         ultimoResultado.textContent = "ERRADO";
         ultimoResultado.style.backgroundColor = "red";
-        if (palpiteUsuario < numeroAleatorio0 {
-            baixoOuAlto.text.content = "O último palpite foi muito baixo";
-        } else if (palpiteUsuario > "O último palpite foi muito alto";
-    }
-}
-
+        if (palpiteUsuario < numeroAleatorio) {
+            baixoOuAlto.textContent = " O ultimo palpite foi muito alto
+        
 contagemPalpites++;
 campoPalpiite.valeu = "";
 campoPakpite.focus();
