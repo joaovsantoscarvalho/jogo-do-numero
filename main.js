@@ -28,7 +28,11 @@ function verificarPalpite() {
         ultimoResultado.textContent = "ERRADO";
         ultimoResultado.style.backgroundColor = "red";
         if (palpiteUsuario < numeroAleatorio) {
-            baixoOuAlto.textContent = " O ultimo palpite foi muito alto
+            baixoOuAlto.textContent = "O ultimo palpite foi muito baixo";
+        } else if (palpiteUsuario > numeroAleatorio) {
+            baixoOuAlto.textContent = "O ultimo palpite foi muito alto";
+        }
+    }
         
 contagemPalpites++;
 campoPalpiite.valeu = "";
@@ -41,7 +45,6 @@ function finalizarJogo() {
     campoPalpite.disabled = true;
     envioPalpite.disabled = true;
     botaoReniciar = document.createElement('button');
-
     document.body.appendChild(botaoReniciar);
     botaoReniciar.textContent = 'Reniciar Jogo';
     botaoReniciar.ClassList.add('botaoReniciar');
