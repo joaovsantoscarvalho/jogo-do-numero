@@ -47,18 +47,18 @@ function finalizarJogo() {
     botaoReiniciar = document.createElement('button');
     document.body.appendChild(botaoReiniciar);
     botaoReiniciar.textContent = 'Reiniciar Jogo';
-    botaoReiniciar.ClassList.add('botaoReiniciar');
-    botaoReiniciar.addEventListener('click', reiniciarJogo);
+    botaoReiniciar.classList.add('botaoReiniciar');
+    botaoReiniciar.addEventListener('click', reniciarJogo);
 }
 
-function reniciarJogo() {
+function reiniciarJogo() {
     contagemPalpites = 1;
-    const paragrafosReniciar = document.querySelectorAll('.paragrafosResultados p');
-    for (const paragrafoReniciar of paragrafosReniciar) {
-        paragrafoReniciar.textcontent = "";
+    const paragrafosReiniciar = document.querySelectorAll('.paragrafosResultados p');
+    for (const paragrafoReiniciar of paragrafosReiniciar) {
+        paragrafoReiniciar.textcontent = "";
     }
 
-    botaoReniciar.parentNode.renmoveChild(botraoReniciar);
+    botaoReiniciar.parentNode.renmoveChild(botaoReiniciar);
     campoPalpite.disabled = false;
     envioPalpite.disabled = false;
     campoPalpite.value = "";
