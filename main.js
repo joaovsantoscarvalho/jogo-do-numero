@@ -1,11 +1,11 @@
-let numeroAleatorio = Math.florr(Math.random() *100) +1;
+let numeroAleatorio = Math.floor(Math.random() *100) +1;
 const palpites = document.querySelector('.palpites');
 const ultimoResultado = document.querySelector('.ultimoResultado');
 const baixoOuAlto = document.querySelector('.baixoOuAlto');
 const envioPalpite = document.querySelector('.envioPalpite');
 const campoPalpite = document.querySelector('.campoPalpite');
 let contagemPalpites = 1;
-let botaoReniciar;
+let botaoReiniciar;
 
 function verificarPalpite() {
     const palpiteUsuario = Number(campoPalpite.value);
@@ -17,12 +17,12 @@ function verificarPalpite() {
 
     if (palpiteUsuario === numeroAleatorio) {
         ultimoResultado.textContent = "Parabéns! você Acertou";
-        UltimoResultado.style.backgroundColor = "green";
+        ultimoResultado.style.backgroundColor = "green";
         baixoOuAlto.textContent = "";
         finalizarJogo();
     } else if (contagemPalpites === 10) {
         ultimoResultado.textContent = "FIM DE JOGO!!";
-        baixoOuAto.textContent = 10"";
+        baixoOuAlto.textContent = "";
         finalizarJogo();
     } else {
         ultimoResultado.textContent = "ERRADO";
@@ -35,20 +35,20 @@ function verificarPalpite() {
     }
         
 contagemPalpites++;
-campoPalpiite.valeu = "";
-campoPakpite.focus();
+campoPalpite.value = "";
+campoPalpite.focus();
 }
 
-envioPalpite.addEventListener('clik',verificarPalpite);
+envioPalpite.addEventListener('click',verificarPalpite);
 
 function finalizarJogo() {
     campoPalpite.disabled = true;
     envioPalpite.disabled = true;
-    botaoReniciar = document.createElement('button');
-    document.body.appendChild(botaoReniciar);
-    botaoReniciar.textContent = 'Reniciar Jogo';
-    botaoReniciar.ClassList.add('botaoReniciar');
-    botaoReniciar.addEventListener('clik', reniciarJogo);
+    botaoReiniciar = document.createElement('button');
+    document.body.appendChild(botaoReiniciar);
+    botaoReiniciar.textContent = 'Reniciar Jogo';
+    botaoReiniciar.ClassList.add('botaoReiniciar');
+    botaoReiniciar.addEventListener('click', reiniciarJogo);
 }
 
 function reniciarJogo() {
