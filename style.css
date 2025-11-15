@@ -1,6 +1,6 @@
 html {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to rigth, #49c518, #23f503);
+    background: linear-gradient(to right, #49c518, #23f503);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@ body {
     background: #ffffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4-x 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -34,7 +34,7 @@ h1 {
 .formulario input[type="number"] {
     width: 200px;
     padding: 10px;
-    margim-bottom: 10px
+    margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #cccccc;
     font-size: 1.1em;
@@ -51,22 +51,22 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
-.formulario input [type="submit"] :hover {
+.formulario input[type="submit"]:hover {
     background-color: #218838;
 }
 
-paragrafosResultado p {
+.paragrafosResultado p {
     font-size: 1.2em;
-    text-aling:center;
+    text-align:center;
     margin: 10px 0;
 }
 
-.ultimoResultsdo {
+.ultimoResultado {
     color: white;
     padding: 3px;
-    boder-radius: 5px;
+    border-radius: 5px;
     font-size: 1.3em;
-    texr-aling: center;
+    text-align: center;
 }
 
 .ultimoResultado.errado {
@@ -77,19 +77,19 @@ paragrafosResultado p {
     background-color: #28a745;
 }
 
-.botaoReniciar {
+.botaoReiniciar {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
-    boder: none;
-    boder-radius: 5px;
+    border: none;
+    border-radius: 5px;
     font-size:1.2em;
     cursor:pointer;
     transition: background-color 0.3s ease;
 }
 
-.botaoReniciar:hover {
+.botaoReiniciar:hover {
     background-color: #0056b3;
 }
