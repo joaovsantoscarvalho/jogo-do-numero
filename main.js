@@ -48,17 +48,17 @@ function finalizarJogo() {
     document.body.appendChild(botaoReiniciar);
     botaoReiniciar.textContent = 'Reiniciar Jogo';
     botaoReiniciar.classList.add('botaoReiniciar');
-    botaoReiniciar.addEventListener('click', reniciarJogo);
+    botaoReiniciar.addEventListener('click', reiniciarJogo);
 }
 
 function reiniciarJogo() {
     contagemPalpites = 1;
     const paragrafosReiniciar = document.querySelectorAll('.paragrafosResultados p');
     for (const paragrafoReiniciar of paragrafosReiniciar) {
-        paragrafoReiniciar.textcontent = "";
+        paragrafoReiniciar.textContent = "";
     }
 
-    botaoReiniciar.parentNode.renmoveChild(botaoReiniciar);
+    botaoReiniciar.parentNode.removeChild(botaoReiniciar);
     campoPalpite.disabled = false;
     envioPalpite.disabled = false;
     campoPalpite.value = "";
